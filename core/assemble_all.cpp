@@ -41,9 +41,9 @@ string run_all(void)
     FILE* file_main = fopen( "temp_main", "wb" ); // file to write the mono output of the main file
     FILE* file2 = fopen( "temp_ref", "wb" );      // file to write the mono output of the reference file
 
-    char* ptr = loadWAV("/home/bk/Desktop/Zigzan_69.wav", size_main); // ptr to raw audio data of main file
+    char* ptr = loadWAV("Zigzan_69.wav", size_main); // ptr to raw audio data of main file
 
-    char* ptr_ref = loadWAV("/home/bk/Desktop/Zigzan.wav", size_ref); // ptr to raw audio data of reference file
+    char* ptr_ref = loadWAV("Zigzan.wav", size_ref); // ptr to raw audio data of reference file
 
     mono_to_stereo(ptr_ref, size_ref,file_main); // change the main stereo file into mono and write data to file pointed by file_main
     mono_to_stereo(ptr, size_main, file2);       // change reference stereo file into mono and write data to file pointed by file2

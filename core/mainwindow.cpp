@@ -34,13 +34,13 @@ void MainWindow::on_pushButton_clicked()
     iss >> number ;
 
     int num = number *1000;
-    player.setMedia(QUrl::fromLocalFile("/home/bk/Desktop/Zigzan.wav"));
+    player.setMedia(QUrl::fromLocalFile("Zigzan.wav"));
     player.setVolume(100);
     player.play();
 
     delay(num+2);
     qDebug() << num << endl;
-    player2.setMedia(QUrl::fromLocalFile("/home/bk/Desktop/Zigzan_69.wav"));
+    player2.setMedia(QUrl::fromLocalFile("Zigzan_69.wav"));
     player2.setVolume(100);
     player2.play();
 }
@@ -77,13 +77,13 @@ void MainWindow::on_pushButton_3_clicked()
     iss >> number ;
 
     int num = number *1000;
-    player.setMedia(QUrl::fromLocalFile("/home/bk/Desktop/Zigzan.wav"));
+    player.setMedia(QUrl::fromLocalFile("Zigzan.wav"));
     player.setVolume(100);
     player.play();
 
 
     qDebug() << num << endl;
-    player2.setMedia(QUrl::fromLocalFile("/home/bk/Desktop/Zigzan_69.wav"));
+    player2.setMedia(QUrl::fromLocalFile("Zigzan_69.wav"));
     player2.setVolume(100);
     player2.play();
 }
