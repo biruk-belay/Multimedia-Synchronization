@@ -8,7 +8,7 @@
 #include <QTime>
 #include <QDebug>
 //std::string std_str;
-void delay( int millisecondsToWait );
+oid delay( int millisecondsToWait );
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
